@@ -1,7 +1,7 @@
 {
   "name": "gospel",
   "version": "0.1.0",
-  "homepage": "https://tazmeah.github.io/Holy-Name-Bible/",
+  "homepage": "https://tazmeah.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
