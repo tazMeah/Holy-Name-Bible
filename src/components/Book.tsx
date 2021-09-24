@@ -1,6 +1,7 @@
 import { useParams, useHistory } from "react-router-dom";
 import { useContext, useLayoutEffect } from "react";
 import { BibleScriptures } from "../context/ScriptureProvider";
+import Bible from "../services/Bible";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import "./Book.css";
@@ -12,7 +13,7 @@ interface params {
 
 export default function Book() {
 	
-	const Bible = useContext(BibleScriptures);
+	// const Bible = useContext(BibleScriptures);
 	const {bookNumber, chapterNumber} = useParams<params>();
 	const history = useHistory();
 	const bookName = new URL(document.location.href).searchParams.get("bookName");

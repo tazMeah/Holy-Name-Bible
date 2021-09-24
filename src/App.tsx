@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Contents from "./components/Contents";
 
 import SearchForm from "./SearchForm";
+import SearchResults from "./components/SearchResults";
 
 function App() {
 	return (
@@ -27,6 +28,9 @@ function App() {
 
 				<Route path="/:bookNumber/:chapterNumber" exact>
 					<Book />
+				</Route>
+				<Route path="/searchResults" exact>
+					<SearchResults/>
 				</Route>
 			</Switch>
 		</div>
