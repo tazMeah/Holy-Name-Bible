@@ -12,12 +12,12 @@ function App() {
 		<div className="container pt-3">
 			<header>
 				<nav>
-					<NavLink to="/Holy-Name-Bible" className="mb-3" exact>Home</NavLink>
+					<NavLink to="/" className="mb-3" exact>Home</NavLink>
 					<SearchForm/>
 				</nav>
 			</header>
 			<Switch>
-				<Route path="/Holy-Name-Bible" exact>
+				<Route path="/" exact>
 					<ScriptureProvider>
 						<div className="App">
 							<Contents />
