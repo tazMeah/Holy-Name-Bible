@@ -3,6 +3,7 @@ import { useContext, useLayoutEffect } from "react";
 import { BibleScriptures } from "../context/ScriptureProvider";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
+import "./Book.css";
 
 interface params {
 	bookNumber: string;
@@ -33,7 +34,7 @@ export default function Book() {
 	});
 
 	return (
-		<div className="book container">
+		<div className="book container mt-3">
 			<h1>{bookName}</h1>
 			<FloatingLabel controlId="floatingSelect" label="Chapter" className="mb-3">
 				<Form.Select
@@ -62,7 +63,10 @@ export default function Book() {
 					verse.Book === +bookNumber &&
 					verse.Chapter === +chapterNumber && (
 						<p key={index}>
-							{verse.Chapter}:{verse.Verse} {verse.Scripture}
+							<span className="verseNumber">
+								{verse.Chapter}:{verse.Verse}{" "}
+							</span>
+							&nbsp;&nbsp;{verse.Scripture}
 						</p>
 					)
 				);

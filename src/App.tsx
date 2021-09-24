@@ -5,12 +5,15 @@ import ScriptureProvider from "./context/ScriptureProvider";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contents from "./components/Contents";
 
+import SearchForm from "./SearchForm";
+
 function App() {
 	return (
-		<>
+		<div className="container pt-3">
 			<header>
 				<nav>
-					<NavLink to="/">Home</NavLink>
+					<NavLink to="/" className="mb-3">Home</NavLink>
+					<SearchForm/>
 				</nav>
 			</header>
 			<Switch>
@@ -26,7 +29,7 @@ function App() {
 					<Book />
 				</Route>
 			</Switch>
-		</>
+		</div>
 	);
 }
 
