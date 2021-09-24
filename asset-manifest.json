@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Holy-Name-Bible/static/css/main.8cef7693.chunk.css",
+    "main.js": "/Holy-Name-Bible/static/js/main.1274dd38.chunk.js",
+    "main.js.map": "/Holy-Name-Bible/static/js/main.1274dd38.chunk.js.map",
+    "runtime-main.js": "/Holy-Name-Bible/static/js/runtime-main.1e49bdd2.js",
+    "runtime-main.js.map": "/Holy-Name-Bible/static/js/runtime-main.1e49bdd2.js.map",
+    "static/css/2.f2512455.chunk.css": "/Holy-Name-Bible/static/css/2.f2512455.chunk.css",
+    "static/js/2.d3964e50.chunk.js": "/Holy-Name-Bible/static/js/2.d3964e50.chunk.js",
+    "static/js/2.d3964e50.chunk.js.map": "/Holy-Name-Bible/static/js/2.d3964e50.chunk.js.map",
+    "static/js/3.ce519c64.chunk.js": "/Holy-Name-Bible/static/js/3.ce519c64.chunk.js",
+    "static/js/3.ce519c64.chunk.js.map": "/Holy-Name-Bible/static/js/3.ce519c64.chunk.js.map",
+    "index.html": "/Holy-Name-Bible/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/Holy-Name-Bible/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.8cef7693.chunk.css.map": "/Holy-Name-Bible/static/css/main.8cef7693.chunk.css.map",
+    "static/js/2.d3964e50.chunk.js.LICENSE.txt": "/Holy-Name-Bible/static/js/2.d3964e50.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e49bdd2.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.d3964e50.chunk.js",
+    "static/css/main.8cef7693.chunk.css",
+    "static/js/main.1274dd38.chunk.js"
+  ]
+}
