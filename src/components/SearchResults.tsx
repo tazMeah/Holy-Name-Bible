@@ -35,12 +35,19 @@ export default function SearchResults() {
 					results = true;
 					return (
 						<p
+							style={{cursor: "pointer"}}
 							key={index}
 							onClick={() => {
 								history.push(
-									"/" + verse.Book + "/" + verse.Chapter + "/#" + verse.Verse + "?bookName=" + booksOfTheBible[verse.Book - 1].split(":"[1] + "#v" + verse.Verse)
+									"/" +
+										verse.Book +
+										"/" +
+										verse.Chapter +
+										"?bookName=" +
+										booksOfTheBible[verse.Book - 1].split(":")[1] +
+										"#v" +
+										verse.Verse
 								);
-								console.log("clicked");
 							}}
 						>
 							{/* <Link
@@ -52,7 +59,6 @@ export default function SearchResults() {
 									hash: "v" + verse.Verse,
 								}}
 							>  */}
-							
 							<span key={index} className="verseNumber">
 								{booksOfTheBible[verse.Book - 1].split(":")[0]} {verse.Chapter}:
 								{verse.Verse}{" "}
