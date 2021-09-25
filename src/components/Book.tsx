@@ -1,6 +1,5 @@
 import { useParams, useHistory } from "react-router-dom";
-import { useContext, useLayoutEffect } from "react";
-import { BibleScriptures } from "../context/ScriptureProvider";
+import {  useLayoutEffect } from "react";
 import Bible from "../services/Bible";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
@@ -37,7 +36,7 @@ export default function Book() {
 	});
 
 	return (
-		<div className="book container mt-3">
+		<div className="book mt-3">
 			<h1>{bookName}</h1>
 			<FloatingLabel
 				controlId="floatingSelect"

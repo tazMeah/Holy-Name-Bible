@@ -3,7 +3,8 @@
 }
 
 .highlight {
-    animation: highlight 5s forwards;
+    /* animation: highlight 5s forwards; */
+    background-color: #ffe564;
 }
 
 @keyframes highlight {

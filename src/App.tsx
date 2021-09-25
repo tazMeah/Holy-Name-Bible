@@ -11,14 +11,16 @@ import SearchResults from "./components/SearchResults";
 function App() {
 	return (
 		<div className="container pt-3">
-			<header>
-				<nav>
-					<NavLink to="/" className="mb-3" exact>Home</NavLink>
-					<SearchForm/>
-				</nav>
-			</header>
 			<Switch>
 				<Route path="/" exact>
+					<header>
+						<nav>
+							<NavLink to="/" className="mb-3" exact>
+								The Holy Name Bible
+							</NavLink>
+							<SearchForm />
+						</nav>
+					</header>
 					<ScriptureProvider>
 						<div className="App">
 							<Contents />
@@ -27,10 +29,26 @@ function App() {
 				</Route>
 
 				<Route path="/:bookNumber/:chapterNumber" exact>
+					<header>
+						<nav>
+							<NavLink to="/" className="mb-3" exact>
+								The Holy Name Bible
+							</NavLink>
+							<SearchForm />
+						</nav>
+					</header>
 					<Book />
 				</Route>
 				<Route path="/searchResults" exact>
-					<SearchResults/>
+					<header>
+						<nav>
+							<NavLink to="/" className="mb-3" exact>
+								The Holy Name Bible
+							</NavLink>
+							{/* <SearchForm /> */}
+						</nav>
+					</header>
+					<SearchResults />
 				</Route>
 			</Switch>
 		</div>
