@@ -16,14 +16,14 @@ export default function Book() {
 	const history = useHistory();
 	const bookName = new URL(document.location.href).searchParams.get("bookName");
 
-	useLayoutEffect(() => {
-		let scrollPoint = document.location.hash
-		if (scrollPoint) {
-			document.querySelector(scrollPoint)!.scrollIntoView();
-			// highlight it
-			document.querySelector(scrollPoint)?.classList.add("highlight");
-		}
-	});
+	// useLayoutEffect(() => {
+	// 	let scrollPoint = document.location.hash
+	// 	if (scrollPoint) {
+	// 		document.querySelector(scrollPoint)!.scrollIntoView();
+	// 		// highlight it
+	// 		document.querySelector(scrollPoint)?.classList.add("highlight");
+	// 	}
+	// });
 	// make array of all chapters
 	const allChapters: number[] = [];
 

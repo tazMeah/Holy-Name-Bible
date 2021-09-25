@@ -2,6 +2,7 @@ import Bible from "../services/Bible";
 import { booksOfTheBible } from "../models/BooksOfTheBible";
 import { Link } from "react-router-dom";
 import { useLayoutEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 export default function SearchResults() {
 	let results = false;
@@ -18,6 +19,9 @@ export default function SearchResults() {
                 }))
         );
     })
+	// for github pages search results instead of Link tag
+	const history = useHistory();
+	
 
 	return (
 		<div>
@@ -30,7 +34,15 @@ export default function SearchResults() {
 				) {
 					results = true;
 					return (
-						<p key={index}>
+						<p
+							key={index}
+							// onClick={() => {
+							// 	history.push(
+							// 		"/" + verse.Book + "/" + verse.Chapter + "/#" + verse.Verse + "?bookName=" + booksOfTheBible[verse.Book - 1].split(":"[1] + "#v" + verse.Verse)
+							// 	);
+							// 	console.log("clicked");
+							// }}
+						>
 							<Link
 								key={index}
 								to={{
@@ -39,12 +51,12 @@ export default function SearchResults() {
 										"bookName=" + booksOfTheBible[verse.Book - 1].split(":")[1],
 									hash: "v" + verse.Verse,
 								}}
-							>
-								{/* <Link to={"/" + verse.Book + "/" + verse.Chapter + "/#" + verse.Verse}> */}
-								<span key={index} className="verseNumber">
-									{booksOfTheBible[verse.Book - 1].split(":")[0]}{" "}
-									{verse.Chapter}:{verse.Verse}{" "}
-								</span>
+							> 
+							{/* <Link to={"/" + verse.Book + "/" + verse.Chapter + "/#" + verse.Verse}> */}
+							<span key={index} className="verseNumber">
+								{booksOfTheBible[verse.Book - 1].split(":")[0]} {verse.Chapter}:
+								{verse.Verse}{" "}
+							</span>
 							</Link>
 							&nbsp;&nbsp;{verse.Scripture}
 						</p>
