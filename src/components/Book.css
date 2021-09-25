@@ -1,3 +1,12 @@
 .verseNumber {
     color: #dc3545;
 }
+
+.highlight {
+    animation: highlight 5s forwards;
+}
+
+@keyframes highlight {
+    from {background-color: #ffc107;}
+    /* to {background-color: initial;} */
+}

@@ -12,19 +12,21 @@ interface params {
 }
 
 export default function Book() {
-	
 	// const Bible = useContext(BibleScriptures);
-	const {bookNumber, chapterNumber} = useParams<params>();
+	const { bookNumber, chapterNumber } = useParams<params>();
 	const history = useHistory();
 	const bookName = new URL(document.location.href).searchParams.get("bookName");
 
 	useLayoutEffect(() => {
-		window.scrollTo(0, 0);
+		let scrollPoint = document.location.hash
+		if (scrollPoint) {
+			document.querySelector(scrollPoint)!.scrollIntoView();
+			// highlight it
+			document.querySelector(scrollPoint)?.classList.add("highlight");
+		}
 	});
 	// make array of all chapters
 	const allChapters: number[] = [];
-
-	
 
 	Bible.forEach((verse) => {
 		if (verse.Book === +bookNumber) {
@@ -37,13 +39,17 @@ export default function Book() {
 	return (
 		<div className="book container mt-3">
 			<h1>{bookName}</h1>
-			<FloatingLabel controlId="floatingSelect" label="Chapter" className="mb-3">
+			<FloatingLabel
+				controlId="floatingSelect"
+				label="Chapter"
+				className="mb-3"
+			>
 				<Form.Select
 					value={chapterNumber}
 					aria-label="Select a chapter."
 					onChange={(e) => {
 						const target = e.target as HTMLSelectElement;
-						
+
 						history.push(
 							"/" + bookNumber + "/" + target.value + "?bookName=" + bookName
 						);
@@ -63,7 +69,7 @@ export default function Book() {
 				return (
 					verse.Book === +bookNumber &&
 					verse.Chapter === +chapterNumber && (
-						<p key={index}>
+						<p key={index} id={"v" + verse.Verse}>
 							<span className="verseNumber">
 								{verse.Chapter}:{verse.Verse}{" "}
 							</span>

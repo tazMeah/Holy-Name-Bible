@@ -7,12 +7,12 @@ import { useHistory } from "react-router-dom";
 export default function SearchForm() {
 	const [searchQuery, setSearchQuery] = useState<string>("");
     const history = useHistory();
+    
 	return (
 		<form onSubmit={(e) => {
             e.preventDefault();
-            console.log(searchQuery);
-            history.push({pathname:"/searchResults", search: "query=" + searchQuery});
-
+            // if we're already on the search results page, search doesn't work
+                history.push({pathname:"/searchResults", search: "query=" + searchQuery})
         }}>
 			<InputGroup className="mt-3 mb-3">
 				<Button variant="outline-secondary" id="button-addon1" type="submit">
