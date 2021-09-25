@@ -1,5 +1,5 @@
 import { useParams, useHistory } from "react-router-dom";
-import {  useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 import Bible from "../services/Bible";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
@@ -64,7 +64,7 @@ export default function Book() {
 				</Form.Select>
 			</FloatingLabel>
 
-			{Bible.map((verse, index) => {
+			{Bible.map((verse: {Book: number, Chapter: number, Verse: number, Scripture: string, Footnote?: string[]}, index) => {
 				return (
 					verse.Book === +bookNumber &&
 					verse.Chapter === +chapterNumber && (
@@ -77,6 +77,26 @@ export default function Book() {
 					)
 				);
 			})}
+
+			<div className="footnotes">
+				{Bible.map((verse, index) => {
+					// footnotes
+					return (
+						verse.Book === +bookNumber &&
+						verse.Chapter === +chapterNumber &&
+						verse.Footnote && (
+							verse.Footnote.map((footnote, index) => {
+							return (
+							<p key={index} className="footnote">
+								{footnote}
+							</p>
+							)
+
+							})
+						)
+					);
+				})}
+			</div>
 		</div>
 	);
 }
