@@ -219,7 +219,9 @@ export default function Contents() {
 				<tr>
 					<td>27</td>
 					<td>
-						<Link to="/27">Daniel</Link>
+						<Link to={{ pathname: "/27/1", search: "bookName=Daniel" }}>
+							Daniel
+						</Link>
 					</td>
 				</tr>
 				<tr>
