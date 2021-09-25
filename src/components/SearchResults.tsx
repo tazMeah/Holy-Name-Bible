@@ -36,14 +36,14 @@ export default function SearchResults() {
 					return (
 						<p
 							key={index}
-							// onClick={() => {
-							// 	history.push(
-							// 		"/" + verse.Book + "/" + verse.Chapter + "/#" + verse.Verse + "?bookName=" + booksOfTheBible[verse.Book - 1].split(":"[1] + "#v" + verse.Verse)
-							// 	);
-							// 	console.log("clicked");
-							// }}
+							onClick={() => {
+								history.push(
+									"/" + verse.Book + "/" + verse.Chapter + "/#" + verse.Verse + "?bookName=" + booksOfTheBible[verse.Book - 1].split(":"[1] + "#v" + verse.Verse)
+								);
+								console.log("clicked");
+							}}
 						>
-							<Link
+							{/* <Link
 								key={index}
 								to={{
 									pathname: "/" + verse.Book + "/" + verse.Chapter,
@@ -51,13 +51,13 @@ export default function SearchResults() {
 										"bookName=" + booksOfTheBible[verse.Book - 1].split(":")[1],
 									hash: "v" + verse.Verse,
 								}}
-							> 
-							{/* <Link to={"/" + verse.Book + "/" + verse.Chapter + "/#" + verse.Verse}> */}
+							>  */}
+							
 							<span key={index} className="verseNumber">
 								{booksOfTheBible[verse.Book - 1].split(":")[0]} {verse.Chapter}:
 								{verse.Verse}{" "}
 							</span>
-							</Link>
+							{/* </Link> */}
 							&nbsp;&nbsp;{verse.Scripture}
 						</p>
 					);
