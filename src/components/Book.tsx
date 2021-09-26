@@ -36,7 +36,7 @@ export default function Book() {
 		}
 	});
 	// for github pages search results instead of Link tag
-	const history = useHistory();
+	// const history = useHistory();
 	
 	// on refresh, go home. workaround for github pages
 	window.onbeforeunload = function() { 
