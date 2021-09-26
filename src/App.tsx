@@ -28,7 +28,7 @@ function App() {
 					</ScriptureProvider>
 				</Route>
 
-				<Route path="/:bookNumber/:chapterNumber" exact>
+				<Route path="/:bookNumber/:chapterNumber" >
 					<header>
 						<nav>
 							<NavLink to="/" className="mb-3" exact>
@@ -39,7 +39,7 @@ function App() {
 					</header>
 					<Book />
 				</Route>
-				<Route path="/searchResults" exact>
+				<Route path="/searchResults">
 					<header>
 						<nav>
 							<NavLink to="/" className="mb-3" exact>
