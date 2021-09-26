@@ -22,6 +22,13 @@ export default function SearchResults() {
 	// for github pages search results instead of Link tag
 	const history = useHistory();
 	
+	// on refresh, go home. workaround for github pages
+	window.onbeforeunload = function() { 
+		window.setTimeout(function () { 
+			window.location.href = "https://tazmeah.github.io/";
+		}, 0); 
+		window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser 
+	}
 
 	return (
 		<div>
