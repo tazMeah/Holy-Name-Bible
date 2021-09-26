@@ -12,21 +12,7 @@ function App() {
 	return (
 		<div className="container pt-3">
 			<Switch>
-				<Route path="/" exact>
-					<header>
-						<nav>
-							<NavLink to="/" className="mb-3" exact>
-								The Holy Name Bible
-							</NavLink>
-							<SearchForm />
-						</nav>
-					</header>
-					<ScriptureProvider>
-						<div className="App">
-							<Contents />
-						</div>
-					</ScriptureProvider>
-				</Route>
+				
 
 				<Route path="/:bookNumber/:chapterNumber" >
 					<header>
@@ -49,6 +35,21 @@ function App() {
 						</nav>
 					</header>
 					<SearchResults />
+				</Route>
+				<Route path="/" exact>
+					<header>
+						<nav>
+							<NavLink to="/" className="mb-3" exact>
+								The Holy Name Bible
+							</NavLink>
+							<SearchForm />
+						</nav>
+					</header>
+					<ScriptureProvider>
+						<div className="App">
+							<Contents />
+						</div>
+					</ScriptureProvider>
 				</Route>
 			</Switch>
 		</div>

@@ -81,7 +81,7 @@ export default function Book() {
 					verse.Book === +bookNumber &&
 					verse.Chapter === +chapterNumber && (
 						<p key={index} id={"v" + verse.Verse}>
-							<span className="verseNumber">
+							<span className="verseNumber" aria-hidden="true">
 								{verse.Chapter}:{verse.Verse}{" "}
 							</span>
 							&nbsp;&nbsp;{verse.Scripture}
