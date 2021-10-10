@@ -12,9 +12,7 @@ function App() {
 	return (
 		<div className="container pt-3">
 			<Switch>
-				
-
-				<Route path="/:bookNumber/:chapterNumber" >
+				<Route path="/:bookNumber/:chapterNumber">
 					<header>
 						<nav>
 							<NavLink to="/" className="mb-3" exact>
@@ -43,6 +41,11 @@ function App() {
 								The Holy Name Bible
 							</NavLink>
 							<SearchForm />
+							<p>
+								Please note the cancellation of our Zoom meetings on the
+								following days: Friday, October 22, 2021 Sunday, October 24,
+								2021 Wednesday, November 17, 2021 Friday, November 19, 2021
+							</p>
 						</nav>
 					</header>
 					<ScriptureProvider>
