@@ -4,12 +4,9 @@ export default function Contents() {
 	return (
 		<div className="mt-3 mb-3">
 			<h1>Contents</h1>
-			
-
 
 			<Table striped bordered hover>
 				<thead>
-					
 					<tr>
 						<th>#</th>
 						<th>book</th>
@@ -184,7 +181,7 @@ export default function Contents() {
 						<td>21</td>
 						<td>
 							<Link to={{ pathname: "/21/1", search: "bookName=Ecclesiastes" }}>
-								Eccliastes
+								Ecclesiastes
 							</Link>
 						</td>
 					</tr>
