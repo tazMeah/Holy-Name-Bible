@@ -52,3 +52,6 @@ a.current:hover {
     justify-content: space-between;
     margin-bottom: 50px;
 }
+.audioContainer svg {
+    height: 30px;
+}
