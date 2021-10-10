@@ -16,3 +16,39 @@ div.footnotes :first-child {
     border-top: 1px solid rgb(33, 37, 41);
     padding-top: 16px;
 }
+
+#chapters > tbody {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+    padding: 6px 12px;
+}
+
+.chapterLinks {
+    padding-right: 20px;
+}
+.chapterLinks a {
+    text-decoration: none;
+}
+
+.chapterLinks a:hover {
+    text-decoration: underline;
+}
+
+a.current {
+    cursor:initial;
+    color: rgb(33, 37, 41);
+}
+
+a.current:hover {
+    cursor: initial;
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
