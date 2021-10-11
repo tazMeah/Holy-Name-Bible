@@ -1,6 +1,5 @@
 import Bible from "../services/Bible";
 import { booksOfTheBible } from "../models/BooksOfTheBible";
-import { Link } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import { useHistory } from "react-router-dom";
 
