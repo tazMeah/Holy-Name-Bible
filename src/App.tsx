@@ -44,9 +44,7 @@ function App() {
 							</NavLink>
 							<SearchForm />
 							<p>
-								Please note the cancellation of our Zoom meetings on the
-								following days: Friday, October 22, 2021 Sunday, October 24,
-								2021 Wednesday, November 17, 2021 Friday, November 19, 2021
+								
 							</p>
 						</nav>
 					</header>
