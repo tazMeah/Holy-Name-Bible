@@ -44,7 +44,7 @@ function App() {
 							</NavLink>
 							<SearchForm />
 							<p>
-								Note: The video <strong><em>What's Going On?</em></strong> will be shared during the December 5, 2021 Zoom meeting.
+								
 							</p>
 						</nav>
 					</header>
