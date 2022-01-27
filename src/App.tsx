@@ -44,7 +44,7 @@ function App() {
 							</NavLink>
 							<SearchForm />
 							<p>
-								Note: There will be no Zoom class Friday December 24 and Friday December 31.
+								
 							</p>
 						</nav>
 					</header>
