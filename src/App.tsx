@@ -1,4 +1,4 @@
-import { BrowserRouter as Router,NavLink, Route, Switch, Link } from "react-router-dom";
+import { HashRouter as Router,NavLink, Route, Switch, Link } from "react-router-dom";
 import Book from "./components/Book";
 import "./App.css";
 import ScriptureProvider from "./context/ScriptureProvider";
@@ -43,9 +43,11 @@ function App() {
 								The Holy Name Bible
 							</NavLink>
 							<SearchForm />
-							<p>
-								
-							</p>
+							{/* <p>
+							REMINDER: The Zoom meetings for the following dates have been cancelled.<br></br> Friday, April 8, 2022 &nbsp;
+							<input type="date" value="2022-04-08"/>,  Sunday, April 10, 2022 &nbsp;
+							<input type="date" value="2022-04-10"/>
+							</p> */}
 						</nav>
 					</header>
 					<ScriptureProvider>
