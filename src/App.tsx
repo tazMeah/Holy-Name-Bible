@@ -1,4 +1,4 @@
-import { HashRouter as Router,NavLink, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router,NavLink, Route, Switch, Link } from "react-router-dom";
 import Book from "./components/Book";
 import "./App.css";
 import ScriptureProvider from "./context/ScriptureProvider";
