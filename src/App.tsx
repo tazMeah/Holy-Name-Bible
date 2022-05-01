@@ -43,11 +43,10 @@ function App() {
 								The Holy Name Bible
 							</NavLink>
 							<SearchForm />
-							{/* <p>
-							REMINDER: The Zoom meetings for the following dates have been cancelled.<br></br> Friday, April 8, 2022 &nbsp;
-							<input type="date" value="2022-04-08"/>,  Sunday, April 10, 2022 &nbsp;
-							<input type="date" value="2022-04-10"/>
-							</p> */}
+							<p>
+							REMINDER: The Zoom meetings for the following dates have been cancelled.<br></br> Sunday, May 22, 2022 &nbsp;
+							<input type="date" value="2022-05-22"/> 
+							</p>
 						</nav>
 					</header>
 					<ScriptureProvider>
