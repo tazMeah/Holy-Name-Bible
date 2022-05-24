@@ -7,6 +7,7 @@ import Contents from "./components/Contents";
 
 import SearchForm from "./SearchForm";
 import SearchResults from "./components/SearchResults";
+import WholeBible from "./components/WholeBible";
 
 function App() {
 
@@ -42,11 +43,14 @@ function App() {
 							<NavLink to="/" className="mb-3" exact>
 								The Holy Name Bible
 							</NavLink>
+							<NavLink to="/all" className="mb-3" id="all" exact>
+								All
+							</NavLink>
 							<SearchForm />
-							<p>
+							{/* <p>
 							REMINDER: The Zoom meetings for the following dates have been cancelled.<br></br> Sunday, May 22, 2022 &nbsp;
 							<input type="date" value="2022-05-22"/> 
-							</p>
+							</p> */}
 						</nav>
 					</header>
 					<ScriptureProvider>
@@ -54,6 +58,9 @@ function App() {
 							<Contents />
 						</div>
 					</ScriptureProvider>
+				</Route>
+				<Route path="/all" exact>
+					<WholeBible/>
 				</Route>
 			</Switch>
 		</div>
