@@ -1,4 +1,4 @@
-import { BrowserRouter as Router,NavLink, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, NavLink, Route, Switch, Link } from "react-router-dom";
 import Book from "./components/Book";
 import "./App.css";
 import ScriptureProvider from "./context/ScriptureProvider";
@@ -13,7 +13,7 @@ function App() {
 
 	return (
 		<div className="container pt-3">
-			
+
 			<Switch>
 				<Route path="/:bookNumber/:chapterNumber">
 					<header>
@@ -47,10 +47,18 @@ function App() {
 								All
 							</NavLink>
 							<SearchForm />
-							{/* <p>
-							REMINDER: The Zoom meetings for the following dates have been cancelled.<br></br> Sunday, May 22, 2022 &nbsp;
-							<input type="date" value="2022-05-22"/> 
-							</p> */}
+							<p>
+								REMINDER: The Zoom meetings for the following dates have been cancelled.<br></br>
+								<input type="date" value="2022-06-03" />
+								<input type="date" value="2022-06-05" />
+								<input type="date" value="2022-06-08" />
+								<input type="date" value="2022-06-22" />
+								<input type="date" value="2022-06-24" />
+								<input type="date" value="2022-06-26" />
+								<input type="date" value="2022-06-29" />
+								
+
+							</p>
 						</nav>
 					</header>
 					<ScriptureProvider>
@@ -60,7 +68,7 @@ function App() {
 					</ScriptureProvider>
 				</Route>
 				<Route path="/all" exact>
-					<WholeBible/>
+					<WholeBible />
 				</Route>
 			</Switch>
 		</div>
