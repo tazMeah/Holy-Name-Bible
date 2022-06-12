@@ -47,7 +47,7 @@ function App() {
 								All
 							</NavLink>
 							<SearchForm />
-							<p>
+							{/* <p>
 								REMINDER: The Zoom meetings for the following dates have been cancelled.<br></br>
 								<input type="date" value="2022-06-03" />
 								<input type="date" value="2022-06-05" />
@@ -58,7 +58,7 @@ function App() {
 								<input type="date" value="2022-06-29" />
 								
 
-							</p>
+							</p> */}
 						</nav>
 					</header>
 					<ScriptureProvider>
