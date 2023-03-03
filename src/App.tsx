@@ -21,6 +21,9 @@ function App() {
 							<NavLink to="/" className="mb-3" exact>
 								The Holy Name Bible
 							</NavLink>
+							<NavLink to="/" className="mb-3" exact>
+								Elohim the Archetype (Original) Pattern of the Universe
+							</NavLink>
 							<SearchForm />
 						</nav>
 					</header>
